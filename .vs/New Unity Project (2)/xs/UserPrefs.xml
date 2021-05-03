@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{68935561-146A-092C-1CE2-388EF65D57EF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/maincharac.cs">
+    <Files>
+      <File FileName="Assets/scripts/mainbullet.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/villainbullet.cs" />
+      <File FileName="Assets/scripts/villain.cs" Line="60" Column="37" />
+      <File FileName="Assets/scripts/maincharac.cs" Line="16" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c3cffeff-d746-4656-97c8-1978e564edce" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
