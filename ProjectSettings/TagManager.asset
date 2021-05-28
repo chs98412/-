@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - hero
+  - villainbullet
+  - mainbullet
+  - villain
+  - hypang
+  - sonpang
+  - jspang
+  - hspang
+  - forestpang
+  - bombbullet
   layers:
   - Default
   - TransparentFX

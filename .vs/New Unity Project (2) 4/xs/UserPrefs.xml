@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{5EEF3169-7B66-D15D-4C22-673CE5E7CDEF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/game1/baseVillain.cs">
+    <Files>
+      <File FileName="Assets/scripts/game1/villaintest.cs" Line="120" Column="4" />
+      <File FileName="Assets/scripts/game1/touchpad/LEFT.cs" Line="12" Column="39" />
+      <File FileName="Assets/scripts/game1/maincharac.cs" Line="193" Column="10" />
+      <File FileName="Assets/scripts/game1/EnemyMove.cs" Line="60" Column="10" />
+      <File FileName="Assets/scripts/game1/coin.cs" Line="29" Column="10" />
+      <File FileName="Assets/scripts/game1/life.cs" Line="28" Column="1" />
+      <File FileName="Assets/scripts/pumpkinbullet.cs" Line="49" Column="47" />
+      <File FileName="Assets/scripts/game1/monsterDirector.cs" Line="5" Column="29" />
+      <File FileName="Assets/scripts/game1/touchpad/AttackJoypad.cs" Line="41" Column="1" NotebookId="1" />
+      <File FileName="Assets/scripts/game1End/score.cs" Line="53" Column="1" NotebookId="1" />
+      <File FileName="Assets/scripts/GameOver/GameOver.cs" Line="18" Column="1" NotebookId="1" />
+      <File FileName="Assets/scripts/game1/baseVillain.cs" Line="23" Column="9" NotebookId="1" />
+      <File FileName="Assets/scripts/loadingScene/loadingScene.cs" Line="28" Column="1" NotebookId="1" />
+      <File FileName="Assets/scripts/game1/StageDirector.cs" Line="49" Column="31" NotebookId="1" />
+      <File FileName="Assets/scripts/game1/villaintest1.cs" Line="25" Column="22" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0054a439-09c6-4863-9532-3dfaf7d3642f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class villain : MonoBehaviour
 {
 
     public GameObject villainbullet1;
-    public GameObject villainbullet2;
 
-    public GameObject villainbullet3;
     GameObject maincharac;
     public float span = 1;
     public float span2 = 0.3f;
@@ -20,11 +19,18 @@ public class villain : MonoBehaviour
     float delta2 = 0;
 
     public float villainSpeed;
+
     GameObject villainHP;
+
 
     float x;
     float y;
     float angle;
+
+    //아이템떨구는부분 변수
+    public GameObject coin;
+    public GameObject life;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,11 +38,16 @@ public class villain : MonoBehaviour
         maincharac = GameObject.Find("maincharac");
 
         villainHP = GameObject.Find("villainHP");
+
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        villainHP.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, -1.3f, 0));
+
         delta += Time.deltaTime;
         delta2 += Time.deltaTime;
 
@@ -90,19 +101,41 @@ public class villain : MonoBehaviour
 
 
             }
+
         }
     }
     void OnTriggerEnter2D(Collider2D a)
     {
-        
+        if(a.gameObject.tag=="mainbullet")
+        villainHP.GetComponent<Image>().fillAmount -= 0.1f;
 
-        if (a.GetComponent<mainbullet>().ismainBullet == 1)
+        if (villainHP.GetComponent<Image>().fillAmount == 0)
         {
-            villainHP.GetComponent<Image>().fillAmount -= 0.1f;
-            Debug.Log("뿅!");
-            a.GetComponent<mainbullet>().ishit = 1;
+            item();
+            Destroy(gameObject);
         }
 
+    }
+
+    void item()
+    {
+        int item = Random.Range(1, 3);
+        if (item == 1)
+        {
+            GameObject coinI = Instantiate(coin) as GameObject;
+            coinI.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
+        }
+
+        else
+        {
+            GameObject lifeI = Instantiate(life) as GameObject;
+            lifeI.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
+        }
+    }
+
+    void endGame1()
+    {
+        SceneManager.LoadScene("game1End");
     }
 }
 
